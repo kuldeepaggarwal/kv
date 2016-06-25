@@ -3,7 +3,7 @@ defmodule KV.Bucket do
   Starts a new Bucket.
   """
   def start_link do
-    Agent.start_link fn -> %{} end, name: :shopping
+    Agent.start_link fn -> %{} end
   end
 
   @doc """
